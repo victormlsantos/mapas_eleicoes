@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_110a6dcb5aeac7ee39cf08185a815307 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_110a6dcb5aeac7ee39cf08185a815307" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_110a6dcb5aeac7ee39cf08185a815307 = L.map(
+                "map_110a6dcb5aeac7ee39cf08185a815307",
+                {
+                    center: [-22.0174, -47.8908],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8f646aa1c8c17ac312289a12abfbaac1 = L.tileLayer(
+                "https://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png?key=cb1_4w28_1_ed8e0d89830a67dd544a7685",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "\u00a9 OpenStreetMap contributors \u00a9 CARTO",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8f646aa1c8c17ac312289a12abfbaac1.addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+            var circle_marker_870048c8f3f639983bb7e9365b8e9fed = L.circleMarker(
+                [-22.0236763, -47.9013708],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.542, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_d738f90d4c645cd50bf55b5478b2d053 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_983f6bc48fed4d32f939a94dda71a0d0 = $(`<div id="html_983f6bc48fed4d32f939a94dda71a0d0" style="width: 100.0%; height: 100.0%;">     <h4><b>EE. BISPO DOM GASTÃO</b></h4>     <b>Região:</b> Centro<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (2574 votos)<br>     <b>Total de Votos no Local:</b> 5271<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 2574 votos<br>     - NEWTON LIMA NETO: 1905 votos<br>     - MARIO CASALE NETO: 423 votos<br>     - Brancos: 118 | Nulos: 251     </div>`)[0];
+                popup_d738f90d4c645cd50bf55b5478b2d053.setContent(html_983f6bc48fed4d32f939a94dda71a0d0);
+            
+        
+
+        circle_marker_870048c8f3f639983bb7e9365b8e9fed.bindPopup(popup_d738f90d4c645cd50bf55b5478b2d053)
+        ;
+
+        
+    
+    
+            var circle_marker_103599952210cbfcc4662bdc396dad3d = L.circleMarker(
+                [-22.0124441, -47.8769825],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_e730105515841a697b65e371e0c04811 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_66711a550d248ef1ff846f7fd0e0b7f5 = $(`<div id="html_66711a550d248ef1ff846f7fd0e0b7f5" style="width: 100.0%; height: 100.0%;">     <h4><b>E.E.  ANTONIO MILITÃO DE LIMA</b></h4>     <b>Região:</b> Leste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (4331 votos)<br>     <b>Total de Votos no Local:</b> 8771<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 4331 votos<br>     - NEWTON LIMA NETO: 3076 votos<br>     - MARIO CASALE NETO: 500 votos<br>     - Brancos: 341 | Nulos: 523     </div>`)[0];
+                popup_e730105515841a697b65e371e0c04811.setContent(html_66711a550d248ef1ff846f7fd0e0b7f5);
+            
+        
+
+        circle_marker_103599952210cbfcc4662bdc396dad3d.bindPopup(popup_e730105515841a697b65e371e0c04811)
+        ;
+
+        
+    
+    
+            var circle_marker_08f0e46c1dc89a9f3f8c8ea7e875fe32 = L.circleMarker(
+                [-21.9800051, -47.9301009],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.872, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_9626398991a3fd7577c80c1d95635597 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_98623bee91579368df8721db4f2cbe12 = $(`<div id="html_98623bee91579368df8721db4f2cbe12" style="width: 100.0%; height: 100.0%;">     <h4><b>UNICEP - CENTRO UNIVERSITÁRIO CENTRAL PAULISTA</b></h4>     <b>Região:</b> Norte<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (2248 votos)<br>     <b>Total de Votos no Local:</b> 4436<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 2248 votos<br>     - NEWTON LIMA NETO: 1424 votos<br>     - MARIO CASALE NETO: 401 votos<br>     - Brancos: 143 | Nulos: 220     </div>`)[0];
+                popup_9626398991a3fd7577c80c1d95635597.setContent(html_98623bee91579368df8721db4f2cbe12);
+            
+        
+
+        circle_marker_08f0e46c1dc89a9f3f8c8ea7e875fe32.bindPopup(popup_9626398991a3fd7577c80c1d95635597)
+        ;
+
+        
+    
+    
+            var circle_marker_e4ed4bda1f2af770a37beb3fd7cd67d4 = L.circleMarker(
+                [-21.9898036, -47.8893574],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.196, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_e296a7678c766c5a5f7b0d736f83bbab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_271645f7e4eab59d6a563e5caebaa145 = $(`<div id="html_271645f7e4eab59d6a563e5caebaa145" style="width: 100.0%; height: 100.0%;">     <h4><b>UNIVERSIDADE FEDERAL DE SAO CARLOS</b></h4>     <b>Região:</b> Norte<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:red;'><b>NEWTON LIMA NETO</b></span> (964 votos)<br>     <b>Total de Votos no Local:</b> 2098<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 841 votos<br>     - NEWTON LIMA NETO: 964 votos<br>     - MARIO CASALE NETO: 180 votos<br>     - Brancos: 43 | Nulos: 70     </div>`)[0];
+                popup_e296a7678c766c5a5f7b0d736f83bbab.setContent(html_271645f7e4eab59d6a563e5caebaa145);
+            
+        
+
+        circle_marker_e4ed4bda1f2af770a37beb3fd7cd67d4.bindPopup(popup_e296a7678c766c5a5f7b0d736f83bbab)
+        ;
+
+        
+    
+    
+            var circle_marker_1ee769255619d0f791dc5b747104b8dd = L.circleMarker(
+                [-21.9949128, -47.8888896],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.776, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_b4b4c3d8c8690ff406fed6fdca090468 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5362b1597a9596e363436fecc76a7084 = $(`<div id="html_5362b1597a9596e363436fecc76a7084" style="width: 100.0%; height: 100.0%;">     <h4><b>COLÉGIO CECÍLIA MEIRELLES</b></h4>     <b>Região:</b> Norte<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:red;'><b>NEWTON LIMA NETO</b></span> (613 votos)<br>     <b>Total de Votos no Local:</b> 1388<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 578 votos<br>     - NEWTON LIMA NETO: 613 votos<br>     - MARIO CASALE NETO: 82 votos<br>     - Brancos: 45 | Nulos: 70     </div>`)[0];
+                popup_b4b4c3d8c8690ff406fed6fdca090468.setContent(html_5362b1597a9596e363436fecc76a7084);
+            
+        
+
+        circle_marker_1ee769255619d0f791dc5b747104b8dd.bindPopup(popup_b4b4c3d8c8690ff406fed6fdca090468)
+        ;
+
+        
+    
+    
+            var circle_marker_d41f9fdb0b291828cdfd171262bcbfaf = L.circleMarker(
+                [-22.0036027, -47.8804474],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_7e17d32712c8abb6ee760e18d01f58e9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_746e3fc42d47ec224689e384f33344cd = $(`<div id="html_746e3fc42d47ec224689e384f33344cd" style="width: 100.0%; height: 100.0%;">     <h4><b>EE ESTERINA PLACCO</b></h4>     <b>Região:</b> Norte<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (7172 votos)<br>     <b>Total de Votos no Local:</b> 14314<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 7172 votos<br>     - NEWTON LIMA NETO: 5002 votos<br>     - MARIO CASALE NETO: 806 votos<br>     - Brancos: 532 | Nulos: 802     </div>`)[0];
+                popup_7e17d32712c8abb6ee760e18d01f58e9.setContent(html_746e3fc42d47ec224689e384f33344cd);
+            
+        
+
+        circle_marker_d41f9fdb0b291828cdfd171262bcbfaf.bindPopup(popup_7e17d32712c8abb6ee760e18d01f58e9)
+        ;
+
+        
+    
+    
+            var circle_marker_3a17f42c8c0b10bc8887ff82267a8a28 = L.circleMarker(
+                [-22.0267609, -47.9128045],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.64, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_ef0d70b9f9e112090ddde4af2c2a3f5c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6b89a2225cff325529a782ebbec1ef5b = $(`<div id="html_6b89a2225cff325529a782ebbec1ef5b" style="width: 100.0%; height: 100.0%;">     <h4><b>EE. PROF. GABRIEL FELIX DO AMARAL</b></h4>     <b>Região:</b> Oeste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (1439 votos)<br>     <b>Total de Votos no Local:</b> 2820<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 1439 votos<br>     - NEWTON LIMA NETO: 937 votos<br>     - MARIO CASALE NETO: 174 votos<br>     - Brancos: 123 | Nulos: 147     </div>`)[0];
+                popup_ef0d70b9f9e112090ddde4af2c2a3f5c.setContent(html_6b89a2225cff325529a782ebbec1ef5b);
+            
+        
+
+        circle_marker_3a17f42c8c0b10bc8887ff82267a8a28.bindPopup(popup_ef0d70b9f9e112090ddde4af2c2a3f5c)
+        ;
+
+        
+    
+    
+            var circle_marker_ac2f3b87a7b32e180f9be56ef21441ec = L.circleMarker(
+                [-22.0469219, -47.8947426],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_3246acf270391788eeb6c806611200a2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_782a76c480b01b74e2d990a7bfa61899 = $(`<div id="html_782a76c480b01b74e2d990a7bfa61899" style="width: 100.0%; height: 100.0%;">     <h4><b>EE. DONA ARACY LEITE PEREIRA LOPES</b></h4>     <b>Região:</b> Sul<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (5930 votos)<br>     <b>Total de Votos no Local:</b> 12292<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 5930 votos<br>     - NEWTON LIMA NETO: 4560 votos<br>     - MARIO CASALE NETO: 640 votos<br>     - Brancos: 466 | Nulos: 696     </div>`)[0];
+                popup_3246acf270391788eeb6c806611200a2.setContent(html_782a76c480b01b74e2d990a7bfa61899);
+            
+        
+
+        circle_marker_ac2f3b87a7b32e180f9be56ef21441ec.bindPopup(popup_3246acf270391788eeb6c806611200a2)
+        ;
+
+        
+    
+    
+            var circle_marker_0eb70f878e3cd8883995f9de69376410 = L.circleMarker(
+                [-21.9920381, -47.9209666],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.75, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_9eb035dc7625e6e65b6b5e74f92dc2e9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2b8f55c63cf81b15803147d65e295043 = $(`<div id="html_2b8f55c63cf81b15803147d65e295043" style="width: 100.0%; height: 100.0%;">     <h4><b>CEMEI - VICENTE DE PAULO ROCHA KEPPE</b></h4>     <b>Região:</b> Oeste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (1092 votos)<br>     <b>Total de Votos no Local:</b> 2375<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 1092 votos<br>     - NEWTON LIMA NETO: 898 votos<br>     - MARIO CASALE NETO: 149 votos<br>     - Brancos: 75 | Nulos: 161     </div>`)[0];
+                popup_9eb035dc7625e6e65b6b5e74f92dc2e9.setContent(html_2b8f55c63cf81b15803147d65e295043);
+            
+        
+
+        circle_marker_0eb70f878e3cd8883995f9de69376410.bindPopup(popup_9eb035dc7625e6e65b6b5e74f92dc2e9)
+        ;
+
+        
+    
+    
+            var circle_marker_32f2afe6281b1383b94214adb290425e = L.circleMarker(
+                [-22.0195792, -47.8896043],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.54, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_0befe2b0ecfb4b2989314878b03a47c9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c33a79b1932b76c03561686be385f167 = $(`<div id="html_c33a79b1932b76c03561686be385f167" style="width: 100.0%; height: 100.0%;">     <h4><b>EE. CEL. PAULINO CARLOS</b></h4>     <b>Região:</b> Centro<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (3180 votos)<br>     <b>Total de Votos no Local:</b> 6270<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 3180 votos<br>     - NEWTON LIMA NETO: 2138 votos<br>     - MARIO CASALE NETO: 382 votos<br>     - Brancos: 246 | Nulos: 324     </div>`)[0];
+                popup_0befe2b0ecfb4b2989314878b03a47c9.setContent(html_c33a79b1932b76c03561686be385f167);
+            
+        
+
+        circle_marker_32f2afe6281b1383b94214adb290425e.bindPopup(popup_0befe2b0ecfb4b2989314878b03a47c9)
+        ;
+
+        
+    
+    
+            var circle_marker_b356275072fe80363c39dff30126d900 = L.circleMarker(
+                [-22.0034127, -47.921757],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.786, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_72b91b6103b325149d4eafd8309850ed = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e499a0618cfa471073e07cdd0a2a38ff = $(`<div id="html_e499a0618cfa471073e07cdd0a2a38ff" style="width: 100.0%; height: 100.0%;">     <h4><b>EMEB - ANGELINA DAGNONE DE MELO</b></h4>     <b>Região:</b> Oeste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (1691 votos)<br>     <b>Total de Votos no Local:</b> 3393<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 1691 votos<br>     - NEWTON LIMA NETO: 1126 votos<br>     - MARIO CASALE NETO: 216 votos<br>     - Brancos: 143 | Nulos: 217     </div>`)[0];
+                popup_72b91b6103b325149d4eafd8309850ed.setContent(html_e499a0618cfa471073e07cdd0a2a38ff);
+            
+        
+
+        circle_marker_b356275072fe80363c39dff30126d900.bindPopup(popup_72b91b6103b325149d4eafd8309850ed)
+        ;
+
+        
+    
+    
+            var circle_marker_3ad92e676a5aa26053b80c3c6c052cbe = L.circleMarker(
+                [-21.9813844, -47.9005392],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.074, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_86ce7be491c18eb0c6bbc95ea82a0a71 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d877dcc13861dec9b60852dc263ddefc = $(`<div id="html_d877dcc13861dec9b60852dc263ddefc" style="width: 100.0%; height: 100.0%;">     <h4><b>EMEB - DALILA GALLI</b></h4>     <b>Região:</b> Norte<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (1203 votos)<br>     <b>Total de Votos no Local:</b> 2537<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 1203 votos<br>     - NEWTON LIMA NETO: 905 votos<br>     - MARIO CASALE NETO: 152 votos<br>     - Brancos: 115 | Nulos: 162     </div>`)[0];
+                popup_86ce7be491c18eb0c6bbc95ea82a0a71.setContent(html_d877dcc13861dec9b60852dc263ddefc);
+            
+        
+
+        circle_marker_3ad92e676a5aa26053b80c3c6c052cbe.bindPopup(popup_86ce7be491c18eb0c6bbc95ea82a0a71)
+        ;
+
+        
+    
+    
+            var circle_marker_d0bc51867cba5c5ba97662a15397ae73 = L.circleMarker(
+                [-22.0136797, -47.8902606],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_82b993a50ee677a491fe88ef6b3dffd1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6d11abd974e016871510c3732e32419a = $(`<div id="html_6d11abd974e016871510c3732e32419a" style="width: 100.0%; height: 100.0%;">     <h4><b>INSTITUTO DE EDUCAÇÃO DR. ÁLVARO GUIÃO</b></h4>     <b>Região:</b> Centro<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (3321 votos)<br>     <b>Total de Votos no Local:</b> 6939<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 3321 votos<br>     - NEWTON LIMA NETO: 2557 votos<br>     - MARIO CASALE NETO: 459 votos<br>     - Brancos: 226 | Nulos: 376     </div>`)[0];
+                popup_82b993a50ee677a491fe88ef6b3dffd1.setContent(html_6d11abd974e016871510c3732e32419a);
+            
+        
+
+        circle_marker_d0bc51867cba5c5ba97662a15397ae73.bindPopup(popup_82b993a50ee677a491fe88ef6b3dffd1)
+        ;
+
+        
+    
+    
+            var circle_marker_5ca6317314ca69dd27b020249828e3cd = L.circleMarker(
+                [-22.059088, -47.9045143],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_c9c4d23ddc79c1b2963ca92a4c7ab77f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_38223517fae0ab29c33e270d78fd3516 = $(`<div id="html_38223517fae0ab29c33e270d78fd3516" style="width: 100.0%; height: 100.0%;">     <h4><b>EE. PROF. ORLANDO PEREZ</b></h4>     <b>Região:</b> Sul<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (3477 votos)<br>     <b>Total de Votos no Local:</b> 6748<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 3477 votos<br>     - NEWTON LIMA NETO: 2289 votos<br>     - MARIO CASALE NETO: 339 votos<br>     - Brancos: 299 | Nulos: 344     </div>`)[0];
+                popup_c9c4d23ddc79c1b2963ca92a4c7ab77f.setContent(html_38223517fae0ab29c33e270d78fd3516);
+            
+        
+
+        circle_marker_5ca6317314ca69dd27b020249828e3cd.bindPopup(popup_c9c4d23ddc79c1b2963ca92a4c7ab77f)
+        ;
+
+        
+    
+    
+            var circle_marker_1945f9096765b51807a1c7d732e5e1a2 = L.circleMarker(
+                [-22.0169549, -47.8513916],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.29, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_a6df50f40c059d2260ac9410e4afbb13 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_968b15b037967d66abc2a21c83d08f4b = $(`<div id="html_968b15b037967d66abc2a21c83d08f4b" style="width: 100.0%; height: 100.0%;">     <h4><b>EMEB - ANTONIO STELLA MORUZZI</b></h4>     <b>Região:</b> Leste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (1224 votos)<br>     <b>Total de Votos no Local:</b> 2645<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 1224 votos<br>     - NEWTON LIMA NETO: 922 votos<br>     - MARIO CASALE NETO: 150 votos<br>     - Brancos: 117 | Nulos: 232     </div>`)[0];
+                popup_a6df50f40c059d2260ac9410e4afbb13.setContent(html_968b15b037967d66abc2a21c83d08f4b);
+            
+        
+
+        circle_marker_1945f9096765b51807a1c7d732e5e1a2.bindPopup(popup_a6df50f40c059d2260ac9410e4afbb13)
+        ;
+
+        
+    
+    
+            var circle_marker_1a4185ac5a8b6f7a7f976cdb4f188628 = L.circleMarker(
+                [-22.0653805, -47.9062276],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.678, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_276394567f37a63365dceae6b63fd1c5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2ec5a1e526d55b349607e064e235d012 = $(`<div id="html_2ec5a1e526d55b349607e064e235d012" style="width: 100.0%; height: 100.0%;">     <h4><b>EMEB PROF. AFONSO FIOCA VITALI (CAIC)</b></h4>     <b>Região:</b> Sul<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (2984 votos)<br>     <b>Total de Votos no Local:</b> 5839<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 2984 votos<br>     - NEWTON LIMA NETO: 2011 votos<br>     - MARIO CASALE NETO: 235 votos<br>     - Brancos: 270 | Nulos: 339     </div>`)[0];
+                popup_276394567f37a63365dceae6b63fd1c5.setContent(html_2ec5a1e526d55b349607e064e235d012);
+            
+        
+
+        circle_marker_1a4185ac5a8b6f7a7f976cdb4f188628.bindPopup(popup_276394567f37a63365dceae6b63fd1c5)
+        ;
+
+        
+    
+    
+            var circle_marker_1866404fa95aba0126a8f6d967a0395d = L.circleMarker(
+                [-22.0385949, -47.8811704],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.508, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_c361c5105a321f396a400a46ed24df7f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8db128dbe6b6f0a49501ed396ee9c064 = $(`<div id="html_8db128dbe6b6f0a49501ed396ee9c064" style="width: 100.0%; height: 100.0%;">     <h4><b>SESI  SERVICO SOCIAL INDUSTRIA</b></h4>     <b>Região:</b> Sul<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (845 votos)<br>     <b>Total de Votos no Local:</b> 1754<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 845 votos<br>     - NEWTON LIMA NETO: 593 votos<br>     - MARIO CASALE NETO: 112 votos<br>     - Brancos: 103 | Nulos: 101     </div>`)[0];
+                popup_c361c5105a321f396a400a46ed24df7f.setContent(html_8db128dbe6b6f0a49501ed396ee9c064);
+            
+        
+
+        circle_marker_1866404fa95aba0126a8f6d967a0395d.bindPopup(popup_c361c5105a321f396a400a46ed24df7f)
+        ;
+
+        
+    
+    
+            var circle_marker_55244951511e35867977c9ed73ef612e = L.circleMarker(
+                [-21.9883353, -47.9232641],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.277999999999999, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_69b82113abf0289f695b630a799c971e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b7474d9efc4f7b298e986b6d396a78ed = $(`<div id="html_b7474d9efc4f7b298e986b6d396a78ed" style="width: 100.0%; height: 100.0%;">     <h4><b>EE BENTO DA SILVA CESAR</b></h4>     <b>Região:</b> Oeste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (1751 votos)<br>     <b>Total de Votos no Local:</b> 3639<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 1751 votos<br>     - NEWTON LIMA NETO: 1244 votos<br>     - MARIO CASALE NETO: 220 votos<br>     - Brancos: 162 | Nulos: 262     </div>`)[0];
+                popup_69b82113abf0289f695b630a799c971e.setContent(html_b7474d9efc4f7b298e986b6d396a78ed);
+            
+        
+
+        circle_marker_55244951511e35867977c9ed73ef612e.bindPopup(popup_69b82113abf0289f695b630a799c971e)
+        ;
+
+        
+    
+    
+            var circle_marker_29f616f8ea8eaeb6f2e8494e9ba5b837 = L.circleMarker(
+                [-21.9885165, -47.900029],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.1, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_13a08b19557af8687d564673b38e012d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b9ca25ac81f86636fcaaba0a12359ec9 = $(`<div id="html_b9ca25ac81f86636fcaaba0a12359ec9" style="width: 100.0%; height: 100.0%;">     <h4><b>EE. PROF.  LUDGERO BRAGA</b></h4>     <b>Região:</b> Norte<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (1076 votos)<br>     <b>Total de Votos no Local:</b> 2050<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 1076 votos<br>     - NEWTON LIMA NETO: 643 votos<br>     - MARIO CASALE NETO: 109 votos<br>     - Brancos: 108 | Nulos: 114     </div>`)[0];
+                popup_13a08b19557af8687d564673b38e012d.setContent(html_b9ca25ac81f86636fcaaba0a12359ec9);
+            
+        
+
+        circle_marker_29f616f8ea8eaeb6f2e8494e9ba5b837.bindPopup(popup_13a08b19557af8687d564673b38e012d)
+        ;
+
+        
+    
+    
+            var circle_marker_6f51bf5eeee4d46c00696d3b50d5b7b8 = L.circleMarker(
+                [-21.9995534, -47.8800399],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.612, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_340878f5384a8a132bf9312227bef379 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_122297ec6ac7738edb5f39109b05e443 = $(`<div id="html_122297ec6ac7738edb5f39109b05e443" style="width: 100.0%; height: 100.0%;">     <h4><b>EE PROF. ANDRELINO VIEIRA</b></h4>     <b>Região:</b> Norte<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (879 votos)<br>     <b>Total de Votos no Local:</b> 1806<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 879 votos<br>     - NEWTON LIMA NETO: 626 votos<br>     - MARIO CASALE NETO: 105 votos<br>     - Brancos: 60 | Nulos: 136     </div>`)[0];
+                popup_340878f5384a8a132bf9312227bef379.setContent(html_122297ec6ac7738edb5f39109b05e443);
+            
+        
+
+        circle_marker_6f51bf5eeee4d46c00696d3b50d5b7b8.bindPopup(popup_340878f5384a8a132bf9312227bef379)
+        ;
+
+        
+    
+    
+            var circle_marker_88f913011644355f9ea87524500b2062 = L.circleMarker(
+                [-22.0344092, -47.8862593],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.54, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_f45d30a9f695c57689381681b276faa9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8e049fd87a33922c799bb975bad6b5e3 = $(`<div id="html_8e049fd87a33922c799bb975bad6b5e3" style="width: 100.0%; height: 100.0%;">     <h4><b>EE. PROF. ANTONIO ADOLFO LOBBE</b></h4>     <b>Região:</b> Sul<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (3180 votos)<br>     <b>Total de Votos no Local:</b> 6270<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 3180 votos<br>     - NEWTON LIMA NETO: 2138 votos<br>     - MARIO CASALE NETO: 382 votos<br>     - Brancos: 246 | Nulos: 324     </div>`)[0];
+                popup_f45d30a9f695c57689381681b276faa9.setContent(html_8e049fd87a33922c799bb975bad6b5e3);
+            
+        
+
+        circle_marker_88f913011644355f9ea87524500b2062.bindPopup(popup_f45d30a9f695c57689381681b276faa9)
+        ;
+
+        
+    
+    
+            var circle_marker_c492879e2e4b84a68bcf229f06c9878b = L.circleMarker(
+                [-22.0016551, -47.9151171],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.998, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_f9567bce6e99ba92ce27deb95f12a58a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_602ce51af2f3d3b38bbf64b317d7302b = $(`<div id="html_602ce51af2f3d3b38bbf64b317d7302b" style="width: 100.0%; height: 100.0%;">     <h4><b>EE PROFA. ATTILIA PRADO MARGARIDO</b></h4>     <b>Região:</b> Oeste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (2456 votos)<br>     <b>Total de Votos no Local:</b> 4999<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 2456 votos<br>     - NEWTON LIMA NETO: 1739 votos<br>     - MARIO CASALE NETO: 239 votos<br>     - Brancos: 216 | Nulos: 349     </div>`)[0];
+                popup_f9567bce6e99ba92ce27deb95f12a58a.setContent(html_602ce51af2f3d3b38bbf64b317d7302b);
+            
+        
+
+        circle_marker_c492879e2e4b84a68bcf229f06c9878b.bindPopup(popup_f9567bce6e99ba92ce27deb95f12a58a)
+        ;
+
+        
+    
+    
+            var circle_marker_a6c16af88578b848742a22b5595b584b = L.circleMarker(
+                [-22.0144367, -47.8983029],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.542, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_3d66450b5bbad372ef0af5406dcdb7f2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5b55b112d5cda962d0e96544741bf637 = $(`<div id="html_5b55b112d5cda962d0e96544741bf637" style="width: 100.0%; height: 100.0%;">     <h4><b>E.E. PROF. SEBASTIÃO DE OLIVEIRA ROCHA</b></h4>     <b>Região:</b> Centro<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (2574 votos)<br>     <b>Total de Votos no Local:</b> 5271<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 2574 votos<br>     - NEWTON LIMA NETO: 1905 votos<br>     - MARIO CASALE NETO: 423 votos<br>     - Brancos: 118 | Nulos: 251     </div>`)[0];
+                popup_3d66450b5bbad372ef0af5406dcdb7f2.setContent(html_5b55b112d5cda962d0e96544741bf637);
+            
+        
+
+        circle_marker_a6c16af88578b848742a22b5595b584b.bindPopup(popup_3d66450b5bbad372ef0af5406dcdb7f2)
+        ;
+
+        
+    
+    
+            var circle_marker_4cc5520f442269f425d56f49944c1b0e = L.circleMarker(
+                [-22.026386, -47.9007886],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.68, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_03977915d41b71b09c9412693ec97f10 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_27340ed2e4b9bd27b088d578f997213a = $(`<div id="html_27340ed2e4b9bd27b088d578f997213a" style="width: 100.0%; height: 100.0%;">     <h4><b>EMEI CARMELITA ROCHA RAMALHO</b></h4>     <b>Região:</b> Centro<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (2033 votos)<br>     <b>Total de Votos no Local:</b> 3840<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 2033 votos<br>     - NEWTON LIMA NETO: 1235 votos<br>     - MARIO CASALE NETO: 211 votos<br>     - Brancos: 137 | Nulos: 224     </div>`)[0];
+                popup_03977915d41b71b09c9412693ec97f10.setContent(html_27340ed2e4b9bd27b088d578f997213a);
+            
+        
+
+        circle_marker_4cc5520f442269f425d56f49944c1b0e.bindPopup(popup_03977915d41b71b09c9412693ec97f10)
+        ;
+
+        
+    
+    
+            var circle_marker_769f3d075de64af33894678d180c5c35 = L.circleMarker(
+                [-22.0370741, -47.9044988],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_a6e024e97e01125d8fd7c1d2f7f29ad3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_747f668634c742745957e1a034823619 = $(`<div id="html_747f668634c742745957e1a034823619" style="width: 100.0%; height: 100.0%;">     <h4><b>EE. PROF. ELYDIA BENETTI</b></h4>     <b>Região:</b> Sul<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (7172 votos)<br>     <b>Total de Votos no Local:</b> 14314<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 7172 votos<br>     - NEWTON LIMA NETO: 5002 votos<br>     - MARIO CASALE NETO: 806 votos<br>     - Brancos: 532 | Nulos: 802     </div>`)[0];
+                popup_a6e024e97e01125d8fd7c1d2f7f29ad3.setContent(html_747f668634c742745957e1a034823619);
+            
+        
+
+        circle_marker_769f3d075de64af33894678d180c5c35.bindPopup(popup_a6e024e97e01125d8fd7c1d2f7f29ad3)
+        ;
+
+        
+    
+    
+            var circle_marker_1e89155219eb1d4e16deb6f78dba9090 = L.circleMarker(
+                [-22.0278203, -47.9162684],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.998, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_022b6ba2ce206de0f8191c3d40c98425 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4a7314bd37a11b54a22570c1acaf29d2 = $(`<div id="html_4a7314bd37a11b54a22570c1acaf29d2" style="width: 100.0%; height: 100.0%;">     <h4><b>EMEB MARIA ERMANTINA CARVALHO TARPANI</b></h4>     <b>Região:</b> Oeste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (2456 votos)<br>     <b>Total de Votos no Local:</b> 4999<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 2456 votos<br>     - NEWTON LIMA NETO: 1739 votos<br>     - MARIO CASALE NETO: 239 votos<br>     - Brancos: 216 | Nulos: 349     </div>`)[0];
+                popup_022b6ba2ce206de0f8191c3d40c98425.setContent(html_4a7314bd37a11b54a22570c1acaf29d2);
+            
+        
+
+        circle_marker_1e89155219eb1d4e16deb6f78dba9090.bindPopup(popup_022b6ba2ce206de0f8191c3d40c98425)
+        ;
+
+        
+    
+    
+            var circle_marker_b5adb14da9a7d930a4fc1f9f911b09ce = L.circleMarker(
+                [-21.7693961, -47.7932053],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_cebaebce99bcec315e8aa4d7ee67f265 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1287889a1833d658e117106a663d9e04 = $(`<div id="html_1287889a1833d658e117106a663d9e04" style="width: 100.0%; height: 100.0%;">     <h4><b>EE PROF LUIZ AUGUSTO DE OLIVEIRA</b></h4>     <b>Região:</b> Norte<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (6482 votos)<br>     <b>Total de Votos no Local:</b> 13280<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 6482 votos<br>     - NEWTON LIMA NETO: 4838 votos<br>     - MARIO CASALE NETO: 880 votos<br>     - Brancos: 416 | Nulos: 664     </div>`)[0];
+                popup_cebaebce99bcec315e8aa4d7ee67f265.setContent(html_1287889a1833d658e117106a663d9e04);
+            
+        
+
+        circle_marker_b5adb14da9a7d930a4fc1f9f911b09ce.bindPopup(popup_cebaebce99bcec315e8aa4d7ee67f265)
+        ;
+
+        
+    
+    
+            var circle_marker_3cd691ae4883fe63adfa29843196cf67 = L.circleMarker(
+                [-22.0046308, -47.8565272],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.129999999999999, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_ed6e2150dbbfe315712b3c3b0de9cbc2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eb94d2dfaffe1cdf63bc6a0a7b3d61c0 = $(`<div id="html_eb94d2dfaffe1cdf63bc6a0a7b3d61c0" style="width: 100.0%; height: 100.0%;">     <h4><b>CEMEI - ANTONIO DE LOURDES RONDON</b></h4>     <b>Região:</b> Leste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (728 votos)<br>     <b>Total de Votos no Local:</b> 1565<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 728 votos<br>     - NEWTON LIMA NETO: 548 votos<br>     - MARIO CASALE NETO: 94 votos<br>     - Brancos: 76 | Nulos: 119     </div>`)[0];
+                popup_ed6e2150dbbfe315712b3c3b0de9cbc2.setContent(html_eb94d2dfaffe1cdf63bc6a0a7b3d61c0);
+            
+        
+
+        circle_marker_3cd691ae4883fe63adfa29843196cf67.bindPopup(popup_ed6e2150dbbfe315712b3c3b0de9cbc2)
+        ;
+
+        
+    
+    
+            var circle_marker_fdfc0014762ea61ffae1a56b5588d3ec = L.circleMarker(
+                [-22.0231961, -47.8937676],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_ed3a829d1ea94570e31a3a482a3b0f15 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9161cab75aca1b6cc6cec15f90e8f38b = $(`<div id="html_9161cab75aca1b6cc6cec15f90e8f38b" style="width: 100.0%; height: 100.0%;">     <h4><b>EE. EUGENIO FRANCO</b></h4>     <b>Região:</b> Centro<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:red;'><b>NEWTON LIMA NETO</b></span> (4027 votos)<br>     <b>Total de Votos no Local:</b> 8949<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 3572 votos<br>     - NEWTON LIMA NETO: 4027 votos<br>     - MARIO CASALE NETO: 670 votos<br>     - Brancos: 238 | Nulos: 442     </div>`)[0];
+                popup_ed3a829d1ea94570e31a3a482a3b0f15.setContent(html_9161cab75aca1b6cc6cec15f90e8f38b);
+            
+        
+
+        circle_marker_fdfc0014762ea61ffae1a56b5588d3ec.bindPopup(popup_ed3a829d1ea94570e31a3a482a3b0f15)
+        ;
+
+        
+    
+    
+            var circle_marker_c5d7e1c0f44438106cdcee3261623164 = L.circleMarker(
+                [-22.0146226, -47.8794318],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_f3d9f13f75039d4b1cbb2bf6d9762850 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1cf2bb5a5f4e1f554a7e89899f9aa1bd = $(`<div id="html_1cf2bb5a5f4e1f554a7e89899f9aa1bd" style="width: 100.0%; height: 100.0%;">     <h4><b>ETEC PAULINO BOTELHO</b></h4>     <b>Região:</b> Centro<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (5930 votos)<br>     <b>Total de Votos no Local:</b> 12292<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 5930 votos<br>     - NEWTON LIMA NETO: 4560 votos<br>     - MARIO CASALE NETO: 640 votos<br>     - Brancos: 466 | Nulos: 696     </div>`)[0];
+                popup_f3d9f13f75039d4b1cbb2bf6d9762850.setContent(html_1cf2bb5a5f4e1f554a7e89899f9aa1bd);
+            
+        
+
+        circle_marker_c5d7e1c0f44438106cdcee3261623164.bindPopup(popup_f3d9f13f75039d4b1cbb2bf6d9762850)
+        ;
+
+        
+    
+    
+            var circle_marker_02d7e68bc89ae5d399f91a674097c2fd = L.circleMarker(
+                [-22.0258881, -47.8821339],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_1a5bac56af773f8d92a64aaede62e3ca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_891869783c69fe9bcf26d9f7b151e890 = $(`<div id="html_891869783c69fe9bcf26d9f7b151e890" style="width: 100.0%; height: 100.0%;">     <h4><b>EE. PROF. ARLINDO BITTENCOURT</b></h4>     <b>Região:</b> Centro<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (6482 votos)<br>     <b>Total de Votos no Local:</b> 13280<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 6482 votos<br>     - NEWTON LIMA NETO: 4838 votos<br>     - MARIO CASALE NETO: 880 votos<br>     - Brancos: 416 | Nulos: 664     </div>`)[0];
+                popup_1a5bac56af773f8d92a64aaede62e3ca.setContent(html_891869783c69fe9bcf26d9f7b151e890);
+            
+        
+
+        circle_marker_02d7e68bc89ae5d399f91a674097c2fd.bindPopup(popup_1a5bac56af773f8d92a64aaede62e3ca)
+        ;
+
+        
+    
+    
+            var circle_marker_df1ac944418b9dd1a093d8f0b8050331 = L.circleMarker(
+                [-22.0305615, -47.8652058],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.437999999999999, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_eac90dbe439af9d7331843e089bce69d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_abe316fdef80176cee6aadd5586b9393 = $(`<div id="html_abe316fdef80176cee6aadd5586b9393" style="width: 100.0%; height: 100.0%;">     <h4><b>EE. PROF. JOÃO JORGE MARMORATO</b></h4>     <b>Região:</b> Leste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (1636 votos)<br>     <b>Total de Votos no Local:</b> 3219<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 1636 votos<br>     - NEWTON LIMA NETO: 1118 votos<br>     - MARIO CASALE NETO: 166 votos<br>     - Brancos: 119 | Nulos: 180     </div>`)[0];
+                popup_eac90dbe439af9d7331843e089bce69d.setContent(html_abe316fdef80176cee6aadd5586b9393);
+            
+        
+
+        circle_marker_df1ac944418b9dd1a093d8f0b8050331.bindPopup(popup_eac90dbe439af9d7331843e089bce69d)
+        ;
+
+        
+    
+    
+            var circle_marker_185ef26d5dc21f85a5ddc1517604422b = L.circleMarker(
+                [-21.9917442, -47.898728],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.12, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_75da66f45b854b0105aded24d12bcf08 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fd717981bea0d91e87016f86a36346a5 = $(`<div id="html_fd717981bea0d91e87016f86a36346a5" style="width: 100.0%; height: 100.0%;">     <h4><b>CEMEI - MARIA LUIZA PERES</b></h4>     <b>Região:</b> Norte<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (494 votos)<br>     <b>Total de Votos no Local:</b> 1060<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 494 votos<br>     - NEWTON LIMA NETO: 389 votos<br>     - MARIO CASALE NETO: 80 votos<br>     - Brancos: 30 | Nulos: 67     </div>`)[0];
+                popup_75da66f45b854b0105aded24d12bcf08.setContent(html_fd717981bea0d91e87016f86a36346a5);
+            
+        
+
+        circle_marker_185ef26d5dc21f85a5ddc1517604422b.bindPopup(popup_75da66f45b854b0105aded24d12bcf08)
+        ;
+
+        
+    
+    
+            var circle_marker_d53bbe5985f004670a84746f3f829078 = L.circleMarker(
+                [-22.0258881, -47.8821339],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.454, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_281c240e40045af436157052593c8032 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_847a5ae3087bc40fe5e2db1cf7612d51 = $(`<div id="html_847a5ae3087bc40fe5e2db1cf7612d51" style="width: 100.0%; height: 100.0%;">     <h4><b>EMEI LAURO MONTEIRO CRUZ</b></h4>     <b>Região:</b> Centro<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (829 votos)<br>     <b>Total de Votos no Local:</b> 1727<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 829 votos<br>     - NEWTON LIMA NETO: 643 votos<br>     - MARIO CASALE NETO: 116 votos<br>     - Brancos: 47 | Nulos: 92     </div>`)[0];
+                popup_281c240e40045af436157052593c8032.setContent(html_847a5ae3087bc40fe5e2db1cf7612d51);
+            
+        
+
+        circle_marker_d53bbe5985f004670a84746f3f829078.bindPopup(popup_281c240e40045af436157052593c8032)
+        ;
+
+        
+    
+    
+            var circle_marker_e6dadf7cb6d039f5d3e3e0a4f5d0fe67 = L.circleMarker(
+                [-22.0131244, -47.8809198],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.322, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_fda48a6d1a64691d6c7d6fa18164c302 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f5446a51191451ede76a0c864fbe9756 = $(`<div id="html_f5446a51191451ede76a0c864fbe9756" style="width: 100.0%; height: 100.0%;">     <h4><b>CEMEI - CÔNEGO MANOEL TOBIAS</b></h4>     <b>Região:</b> Centro<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (294 votos)<br>     <b>Total de Votos no Local:</b> 661<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 294 votos<br>     - NEWTON LIMA NETO: 272 votos<br>     - MARIO CASALE NETO: 46 votos<br>     - Brancos: 22 | Nulos: 27     </div>`)[0];
+                popup_fda48a6d1a64691d6c7d6fa18164c302.setContent(html_f5446a51191451ede76a0c864fbe9756);
+            
+        
+
+        circle_marker_e6dadf7cb6d039f5d3e3e0a4f5d0fe67.bindPopup(popup_fda48a6d1a64691d6c7d6fa18164c302)
+        ;
+
+        
+    
+    
+            var circle_marker_2cf03382dd4eac44b4f4b62410151928 = L.circleMarker(
+                [-22.0506025, -47.9247481],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.252, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_cbf68499069d79e5fb3aef4626509cdd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3697bf2cdb326725f567f56c8d23820b = $(`<div id="html_3697bf2cdb326725f567f56c8d23820b" style="width: 100.0%; height: 100.0%;">     <h4><b>EE. PROF. JOÃO BATISTA GASPARIN (EE JD. ZAVAGLIA)</b></h4>     <b>Região:</b> Sul<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:red;'><b>NEWTON LIMA NETO</b></span> (280 votos)<br>     <b>Total de Votos no Local:</b> 626<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 263 votos<br>     - NEWTON LIMA NETO: 280 votos<br>     - MARIO CASALE NETO: 16 votos<br>     - Brancos: 33 | Nulos: 34     </div>`)[0];
+                popup_cbf68499069d79e5fb3aef4626509cdd.setContent(html_3697bf2cdb326725f567f56c8d23820b);
+            
+        
+
+        circle_marker_2cf03382dd4eac44b4f4b62410151928.bindPopup(popup_cbf68499069d79e5fb3aef4626509cdd)
+        ;
+
+        
+    
+    
+            var circle_marker_598e63a4a4842efac1235428e8545ad6 = L.circleMarker(
+                [-22.0132475, -47.8923872],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.992, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_cef8dfe2747a48337fa4bdaaa730226a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cad8fc1eded3eb6a381fcf2fbfaa4631 = $(`<div id="html_cad8fc1eded3eb6a381fcf2fbfaa4631" style="width: 100.0%; height: 100.0%;">     <h4><b>FUNDAÇÃO EDUCACIONAL DE SÃO CARLOS</b></h4>     <b>Região:</b> Centro<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (450 votos)<br>     <b>Total de Votos no Local:</b> 996<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 450 votos<br>     - NEWTON LIMA NETO: 401 votos<br>     - MARIO CASALE NETO: 78 votos<br>     - Brancos: 19 | Nulos: 48     </div>`)[0];
+                popup_cef8dfe2747a48337fa4bdaaa730226a.setContent(html_cad8fc1eded3eb6a381fcf2fbfaa4631);
+            
+        
+
+        circle_marker_598e63a4a4842efac1235428e8545ad6.bindPopup(popup_cef8dfe2747a48337fa4bdaaa730226a)
+        ;
+
+        
+    
+    
+            var circle_marker_345c0a6a905d0215188fece9650542c7 = L.circleMarker(
+                [-21.7699154, -47.7931752],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.586, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_30a96da0e281f9c66bb6ec27e55e0e0f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8d65afc3c6385e6d8e2524b4f633c546 = $(`<div id="html_8d65afc3c6385e6d8e2524b4f633c546" style="width: 100.0%; height: 100.0%;">     <h4><b>EE VISCONDE CUNHA BUENO</b></h4>     <b>Região:</b> Norte<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (576 votos)<br>     <b>Total de Votos no Local:</b> 1293<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 576 votos<br>     - NEWTON LIMA NETO: 459 votos<br>     - MARIO CASALE NETO: 63 votos<br>     - Brancos: 87 | Nulos: 108     </div>`)[0];
+                popup_30a96da0e281f9c66bb6ec27e55e0e0f.setContent(html_8d65afc3c6385e6d8e2524b4f633c546);
+            
+        
+
+        circle_marker_345c0a6a905d0215188fece9650542c7.bindPopup(popup_30a96da0e281f9c66bb6ec27e55e0e0f)
+        ;
+
+        
+    
+    
+            var circle_marker_0deb36f25ff6e35a61dc83fb4268b1ef = L.circleMarker(
+                [-22.0018435, -47.8804636],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.25, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_6de90538d7a2b80c0ad683543b76969f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_206e13bc1847dc187d6211514ead04aa = $(`<div id="html_206e13bc1847dc187d6211514ead04aa" style="width: 100.0%; height: 100.0%;">     <h4><b>CEMEI - HELENA DORNFELD</b></h4>     <b>Região:</b> Norte<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:red;'><b>NEWTON LIMA NETO</b></span> (483 votos)<br>     <b>Total de Votos no Local:</b> 1125<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 466 votos<br>     - NEWTON LIMA NETO: 483 votos<br>     - MARIO CASALE NETO: 64 votos<br>     - Brancos: 45 | Nulos: 67     </div>`)[0];
+                popup_6de90538d7a2b80c0ad683543b76969f.setContent(html_206e13bc1847dc187d6211514ead04aa);
+            
+        
+
+        circle_marker_0deb36f25ff6e35a61dc83fb4268b1ef.bindPopup(popup_6de90538d7a2b80c0ad683543b76969f)
+        ;
+
+        
+    
+    
+            var circle_marker_ccccedae7f20a14f55d39fb93e7f0238 = L.circleMarker(
+                [-22.0274975, -47.8689815],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.196, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_cb343cb3612b42880c79dc5b92698f65 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_93663b874cfab4de3da70882751d22f3 = $(`<div id="html_93663b874cfab4de3da70882751d22f3" style="width: 100.0%; height: 100.0%;">     <h4><b>CEMEI JOÃO BAPTISTA PAINO</b></h4>     <b>Região:</b> Leste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (282 votos)<br>     <b>Total de Votos no Local:</b> 598<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 282 votos<br>     - NEWTON LIMA NETO: 230 votos<br>     - MARIO CASALE NETO: 36 votos<br>     - Brancos: 24 | Nulos: 26     </div>`)[0];
+                popup_cb343cb3612b42880c79dc5b92698f65.setContent(html_93663b874cfab4de3da70882751d22f3);
+            
+        
+
+        circle_marker_ccccedae7f20a14f55d39fb93e7f0238.bindPopup(popup_cb343cb3612b42880c79dc5b92698f65)
+        ;
+
+        
+    
+    
+            var circle_marker_546569e3555d8abad4d49de634f2505f = L.circleMarker(
+                [-22.0034526, -47.8704846],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.832, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_f52fd1e7f28023320d0700f08439f7d1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2cac0a5b96879d5b6ee4ba3915153374 = $(`<div id="html_2cac0a5b96879d5b6ee4ba3915153374" style="width: 100.0%; height: 100.0%;">     <h4><b>EE MARILENE TEREZINHA LONGHIN</b></h4>     <b>Região:</b> Leste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (691 votos)<br>     <b>Total de Votos no Local:</b> 1416<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 691 votos<br>     - NEWTON LIMA NETO: 481 votos<br>     - MARIO CASALE NETO: 54 votos<br>     - Brancos: 69 | Nulos: 121     </div>`)[0];
+                popup_f52fd1e7f28023320d0700f08439f7d1.setContent(html_2cac0a5b96879d5b6ee4ba3915153374);
+            
+        
+
+        circle_marker_546569e3555d8abad4d49de634f2505f.bindPopup(popup_f52fd1e7f28023320d0700f08439f7d1)
+        ;
+
+        
+    
+    
+            var circle_marker_6a11ea69984de77c316acabffa069bc0 = L.circleMarker(
+                [-22.0022493, -47.9211045],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_110a6dcb5aeac7ee39cf08185a815307);
+        
+    
+        var popup_0ed15907dc12785cd2b5bb0129b2dd99 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3d867ac9197f87603687575492c3df90 = $(`<div id="html_3d867ac9197f87603687575492c3df90" style="width: 100.0%; height: 100.0%;">     <h4><b>CEMEI WALTER BLANCO</b></h4>     <b>Região:</b> Oeste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>ANTONIO DONATO NETTO</b></span> (124 votos)<br>     <b>Total de Votos no Local:</b> 288<br>     <br>     <b>Detalhamento:</b><br>     - ANTONIO DONATO NETTO: 124 votos<br>     - NEWTON LIMA NETO: 108 votos<br>     - MARIO CASALE NETO: 28 votos<br>     - Brancos: 16 | Nulos: 12     </div>`)[0];
+                popup_0ed15907dc12785cd2b5bb0129b2dd99.setContent(html_3d867ac9197f87603687575492c3df90);
+            
+        
+
+        circle_marker_6a11ea69984de77c316acabffa069bc0.bindPopup(popup_0ed15907dc12785cd2b5bb0129b2dd99)
+        ;
+
+        
+    
+</script>
+</html>

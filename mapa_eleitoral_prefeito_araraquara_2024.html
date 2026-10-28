@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2b05d2a77c17fe30620bd339faa70f94 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2b05d2a77c17fe30620bd339faa70f94" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2b05d2a77c17fe30620bd339faa70f94 = L.map(
+                "map_2b05d2a77c17fe30620bd339faa70f94",
+                {
+                    center: [-21.7944, -48.1756],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b96fd84fa76ef1b8f2e39dc7b8fa07a3 = L.tileLayer(
+                "https://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png?key=cb1_4w28_1_ed8e0d89830a67dd544a7685",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "\u00a9 OpenStreetMap contributors \u00a9 CARTO",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b96fd84fa76ef1b8f2e39dc7b8fa07a3.addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+            var circle_marker_5940f641e0f072e098c16312993dbd83 = L.circleMarker(
+                [-21.769652, -48.137226],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.926, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_d98c7625d2222a6d187004fe362fd9e1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c929f45c79d8a84f90b2932760833e62 = $(`<div id="html_c929f45c79d8a84f90b2932760833e62" style="width: 100.0%; height: 100.0%;">     <h4><b>EE ANTONIO DE OLIVEIRA BUENO FILHO</b></h4>     <b>Região:</b> Leste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (1259 votos)<br>     <b>Total de Votos no Local:</b> 2963<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 1191 votos<br>     - DR. LAPENA: 1259 votos<br>     - GARRIDO: 27 votos<br>     - PEDRO LIA TEDDE: 106 votos<br>     - Brancos: 142 | Nulos: 232     </div>`)[0];
+                popup_d98c7625d2222a6d187004fe362fd9e1.setContent(html_c929f45c79d8a84f90b2932760833e62);
+            
+        
+
+        circle_marker_5940f641e0f072e098c16312993dbd83.bindPopup(popup_d98c7625d2222a6d187004fe362fd9e1)
+        ;
+
+        
+    
+    
+            var circle_marker_72ae076bf73eebb49b2f34c7733a8ab9 = L.circleMarker(
+                [-21.7730262, -48.1929292],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.072, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_c76b36632525a04501e55a771e602f5b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4efccfec0743e602bb8e3362ff1b8646 = $(`<div id="html_4efccfec0743e602bb8e3362ff1b8646" style="width: 100.0%; height: 100.0%;">     <h4><b>EE  PROF.  AUGUSTO DA SILVA CESAR</b></h4>     <b>Região:</b> Norte<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (450 votos)<br>     <b>Total de Votos no Local:</b> 1036<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 409 votos<br>     - DR. LAPENA: 450 votos<br>     - GARRIDO: 11 votos<br>     - PEDRO LIA TEDDE: 44 votos<br>     - Brancos: 44 | Nulos: 75     </div>`)[0];
+                popup_c76b36632525a04501e55a771e602f5b.setContent(html_4efccfec0743e602bb8e3362ff1b8646);
+            
+        
+
+        circle_marker_72ae076bf73eebb49b2f34c7733a8ab9.bindPopup(popup_c76b36632525a04501e55a771e602f5b)
+        ;
+
+        
+    
+    
+            var circle_marker_44a255a2b88e42078ae02f1d6779f809 = L.circleMarker(
+                [-21.7817171, -48.181466],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.782, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_1818551d456fcec6efb6d2724cec2bf2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_75ec242649ef11a39b7b19a9813769b9 = $(`<div id="html_75ec242649ef11a39b7b19a9813769b9" style="width: 100.0%; height: 100.0%;">     <h4><b>EE. BENTO DE ABREU</b></h4>     <b>Região:</b> Norte<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (1465 votos)<br>     <b>Total de Votos no Local:</b> 2891<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 1023 votos<br>     - DR. LAPENA: 1465 votos<br>     - GARRIDO: 18 votos<br>     - PEDRO LIA TEDDE: 175 votos<br>     - Brancos: 67 | Nulos: 138     </div>`)[0];
+                popup_1818551d456fcec6efb6d2724cec2bf2.setContent(html_75ec242649ef11a39b7b19a9813769b9);
+            
+        
+
+        circle_marker_44a255a2b88e42078ae02f1d6779f809.bindPopup(popup_1818551d456fcec6efb6d2724cec2bf2)
+        ;
+
+        
+    
+    
+            var circle_marker_55a1e0173995be706eba54c69c7e416f = L.circleMarker(
+                [-21.7412014, -48.1538393],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.358, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_e90e9ac7f4ab1a6ce7140732bc9e491d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bff3756f8f1cb418c1a826729b6040e7 = $(`<div id="html_bff3756f8f1cb418c1a826729b6040e7" style="width: 100.0%; height: 100.0%;">     <h4><b>EE PROFª. ERGILIA MICELLI</b></h4>     <b>Região:</b> Norte<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:red;'><b>ELIANA APARECIDA MORI HONAIN</b></span> (1818 votos)<br>     <b>Total de Votos no Local:</b> 4179<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 1818 votos<br>     - DR. LAPENA: 1695 votos<br>     - GARRIDO: 25 votos<br>     - PEDRO LIA TEDDE: 110 votos<br>     - Brancos: 233 | Nulos: 289     </div>`)[0];
+                popup_e90e9ac7f4ab1a6ce7140732bc9e491d.setContent(html_bff3756f8f1cb418c1a826729b6040e7);
+            
+        
+
+        circle_marker_55a1e0173995be706eba54c69c7e416f.bindPopup(popup_e90e9ac7f4ab1a6ce7140732bc9e491d)
+        ;
+
+        
+    
+    
+            var circle_marker_4c4c877c08fa0ae22d829975a0dd12eb = L.circleMarker(
+                [-21.7959317, -48.1737786],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_21412039d6af16291c2deb0709fbd244 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7d16909fde6ab3d1a75ef0512c98bfc9 = $(`<div id="html_7d16909fde6ab3d1a75ef0512c98bfc9" style="width: 100.0%; height: 100.0%;">     <h4><b>EMEF. PROF. JOSÉ ROBERTO DE PÁDUA CAMARGO</b></h4>     <b>Região:</b> Centro<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:red;'><b>ELIANA APARECIDA MORI HONAIN</b></span> (4004 votos)<br>     <b>Total de Votos no Local:</b> 9514<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 4004 votos<br>     - DR. LAPENA: 3826 votos<br>     - GARRIDO: 82 votos<br>     - PEDRO LIA TEDDE: 410 votos<br>     - Brancos: 510 | Nulos: 658     </div>`)[0];
+                popup_21412039d6af16291c2deb0709fbd244.setContent(html_7d16909fde6ab3d1a75ef0512c98bfc9);
+            
+        
+
+        circle_marker_4c4c877c08fa0ae22d829975a0dd12eb.bindPopup(popup_21412039d6af16291c2deb0709fbd244)
+        ;
+
+        
+    
+    
+            var circle_marker_4acffe54478c828c708c85069ffebd74 = L.circleMarker(
+                [-21.8089073, -48.1759247],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.308, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_26cc52e41338aef7802a6b7a66a32b25 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_329c926ca88f53dccb7868ef13f1a56f = $(`<div id="html_329c926ca88f53dccb7868ef13f1a56f" style="width: 100.0%; height: 100.0%;">     <h4><b>UNIARA</b></h4>     <b>Região:</b> Sul<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (1650 votos)<br>     <b>Total de Votos no Local:</b> 3654<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 1435 votos<br>     - DR. LAPENA: 1650 votos<br>     - GARRIDO: 43 votos<br>     - PEDRO LIA TEDDE: 170 votos<br>     - Brancos: 136 | Nulos: 211     </div>`)[0];
+                popup_26cc52e41338aef7802a6b7a66a32b25.setContent(html_329c926ca88f53dccb7868ef13f1a56f);
+            
+        
+
+        circle_marker_4acffe54478c828c708c85069ffebd74.bindPopup(popup_26cc52e41338aef7802a6b7a66a32b25)
+        ;
+
+        
+    
+    
+            var circle_marker_51aedc75eb77b965de45d4a1afd12a41 = L.circleMarker(
+                [-21.7797471, -48.1466165],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.786, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_8bf4ddfb9280799b237c1b5519cf5cba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4872bed16d0fa58ae7a6feedc0d850d6 = $(`<div id="html_4872bed16d0fa58ae7a6feedc0d850d6" style="width: 100.0%; height: 100.0%;">     <h4><b>EE PROFª ANTONIA EUGENIA MARTINS</b></h4>     <b>Região:</b> Leste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (1796 votos)<br>     <b>Total de Votos no Local:</b> 3893<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 1510 votos<br>     - DR. LAPENA: 1796 votos<br>     - GARRIDO: 33 votos<br>     - PEDRO LIA TEDDE: 151 votos<br>     - Brancos: 178 | Nulos: 219     </div>`)[0];
+                popup_8bf4ddfb9280799b237c1b5519cf5cba.setContent(html_4872bed16d0fa58ae7a6feedc0d850d6);
+            
+        
+
+        circle_marker_51aedc75eb77b965de45d4a1afd12a41.bindPopup(popup_8bf4ddfb9280799b237c1b5519cf5cba)
+        ;
+
+        
+    
+    
+            var circle_marker_f80ce3ea9fcc339a156fb4636ca62fd9 = L.circleMarker(
+                [-21.7711245, -48.1823146],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.984, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_016daff169bccc64ffc77cc22da577fa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5e3ddbf8d9cea09f17db42767cd945c7 = $(`<div id="html_5e3ddbf8d9cea09f17db42767cd945c7" style="width: 100.0%; height: 100.0%;">     <h4><b>EE. JOÃO BATISTA DE OLIVEIRA</b></h4>     <b>Região:</b> Norte<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (1253 votos)<br>     <b>Total de Votos no Local:</b> 2492<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 881 votos<br>     - DR. LAPENA: 1253 votos<br>     - GARRIDO: 19 votos<br>     - PEDRO LIA TEDDE: 132 votos<br>     - Brancos: 71 | Nulos: 131     </div>`)[0];
+                popup_016daff169bccc64ffc77cc22da577fa.setContent(html_5e3ddbf8d9cea09f17db42767cd945c7);
+            
+        
+
+        circle_marker_f80ce3ea9fcc339a156fb4636ca62fd9.bindPopup(popup_016daff169bccc64ffc77cc22da577fa)
+        ;
+
+        
+    
+    
+            var circle_marker_acf1d2d799a18ed073342e8f8ef26953 = L.circleMarker(
+                [-21.7882302, -48.1549122],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.884, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_de40a9a9a92f688cdfc004e33920c4ac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3387e1f17d4f70f8b31b33833e13eff7 = $(`<div id="html_3387e1f17d4f70f8b31b33833e13eff7" style="width: 100.0%; height: 100.0%;">     <h4><b>EE PROFª. LÉA DE FREITAS MONTEIRO</b></h4>     <b>Região:</b> Leste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (2525 votos)<br>     <b>Total de Votos no Local:</b> 5442<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 2091 votos<br>     - DR. LAPENA: 2525 votos<br>     - GARRIDO: 50 votos<br>     - PEDRO LIA TEDDE: 237 votos<br>     - Brancos: 212 | Nulos: 320     </div>`)[0];
+                popup_de40a9a9a92f688cdfc004e33920c4ac.setContent(html_3387e1f17d4f70f8b31b33833e13eff7);
+            
+        
+
+        circle_marker_acf1d2d799a18ed073342e8f8ef26953.bindPopup(popup_de40a9a9a92f688cdfc004e33920c4ac)
+        ;
+
+        
+    
+    
+            var circle_marker_1a7cc3027fb743388c958c7e0f2e2e9c = L.circleMarker(
+                [-21.7928953, -48.1763683],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.884, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_aa90c699fa5df0f3dd1b85325599ba3f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_54e098fabfb0a8c2ef73f85a9b0c7908 = $(`<div id="html_54e098fabfb0a8c2ef73f85a9b0c7908" style="width: 100.0%; height: 100.0%;">     <h4><b>COLÉGIO OBJETIVO</b></h4>     <b>Região:</b> Centro<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (2525 votos)<br>     <b>Total de Votos no Local:</b> 5442<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 2091 votos<br>     - DR. LAPENA: 2525 votos<br>     - GARRIDO: 50 votos<br>     - PEDRO LIA TEDDE: 237 votos<br>     - Brancos: 212 | Nulos: 320     </div>`)[0];
+                popup_aa90c699fa5df0f3dd1b85325599ba3f.setContent(html_54e098fabfb0a8c2ef73f85a9b0c7908);
+            
+        
+
+        circle_marker_1a7cc3027fb743388c958c7e0f2e2e9c.bindPopup(popup_aa90c699fa5df0f3dd1b85325599ba3f)
+        ;
+
+        
+    
+    
+            var circle_marker_534cfd6d693ac2202203ff4afd65bd03 = L.circleMarker(
+                [-21.788844, -48.1602213],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.888, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_590109f2ce2133576f1f6790a10bff3e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_97963ad6b912cde5822747c50f6ed86f = $(`<div id="html_97963ad6b912cde5822747c50f6ed86f" style="width: 100.0%; height: 100.0%;">     <h4><b>EE DORIVAL ALVES</b></h4>     <b>Região:</b> Leste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (2058 votos)<br>     <b>Total de Votos no Local:</b> 4444<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 1767 votos<br>     - DR. LAPENA: 2058 votos<br>     - GARRIDO: 41 votos<br>     - PEDRO LIA TEDDE: 150 votos<br>     - Brancos: 170 | Nulos: 251     </div>`)[0];
+                popup_590109f2ce2133576f1f6790a10bff3e.setContent(html_97963ad6b912cde5822747c50f6ed86f);
+            
+        
+
+        circle_marker_534cfd6d693ac2202203ff4afd65bd03.bindPopup(popup_590109f2ce2133576f1f6790a10bff3e)
+        ;
+
+        
+    
+    
+            var circle_marker_af40aec04438933ca436fc8232e73f7c = L.circleMarker(
+                [-21.788563, -48.1545967],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.288, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_8ba1969435cb21e091915a3a3ce1270c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_88744cb79c2798201ce339f0fb9f225d = $(`<div id="html_88744cb79c2798201ce339f0fb9f225d" style="width: 100.0%; height: 100.0%;">     <h4><b>CER DONA COTINHA DE BARROS</b></h4>     <b>Região:</b> Leste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (299 votos)<br>     <b>Total de Votos no Local:</b> 644<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 237 votos<br>     - DR. LAPENA: 299 votos<br>     - GARRIDO: 12 votos<br>     - PEDRO LIA TEDDE: 19 votos<br>     - Brancos: 25 | Nulos: 52     </div>`)[0];
+                popup_8ba1969435cb21e091915a3a3ce1270c.setContent(html_88744cb79c2798201ce339f0fb9f225d);
+            
+        
+
+        circle_marker_af40aec04438933ca436fc8232e73f7c.bindPopup(popup_8ba1969435cb21e091915a3a3ce1270c)
+        ;
+
+        
+    
+    
+            var circle_marker_bee008bc26cf92d1fe74c35656f8316f = L.circleMarker(
+                [-21.7722778, -48.1491847],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.828, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_7c8281466606542ec20d54c85a428e1e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_40588cf6e21428bb181498cca50cbe10 = $(`<div id="html_40588cf6e21428bb181498cca50cbe10" style="width: 100.0%; height: 100.0%;">     <h4><b>EE PROF. ANTONIO DOS SANTOS</b></h4>     <b>Região:</b> Leste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (1051 votos)<br>     <b>Total de Votos no Local:</b> 2414<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 943 votos<br>     - DR. LAPENA: 1051 votos<br>     - GARRIDO: 15 votos<br>     - PEDRO LIA TEDDE: 91 votos<br>     - Brancos: 133 | Nulos: 173     </div>`)[0];
+                popup_7c8281466606542ec20d54c85a428e1e.setContent(html_40588cf6e21428bb181498cca50cbe10);
+            
+        
+
+        circle_marker_bee008bc26cf92d1fe74c35656f8316f.bindPopup(popup_7c8281466606542ec20d54c85a428e1e)
+        ;
+
+        
+    
+    
+            var circle_marker_1655ab76a0d49011af55e789ddc38da7 = L.circleMarker(
+                [-21.7265035, -48.1488934],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.046, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_b851a8f98be857de599a90c0cb8344b1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3202d63a431c872f36b3537e52125ab0 = $(`<div id="html_3202d63a431c872f36b3537e52125ab0" style="width: 100.0%; height: 100.0%;">     <h4><b>EMEF PREFEITO RUBENS CRUZ</b></h4>     <b>Região:</b> Norte<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:red;'><b>ELIANA APARECIDA MORI HONAIN</b></span> (1769 votos)<br>     <b>Total de Votos no Local:</b> 3523<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 1769 votos<br>     - DR. LAPENA: 1177 votos<br>     - GARRIDO: 30 votos<br>     - PEDRO LIA TEDDE: 94 votos<br>     - Brancos: 222 | Nulos: 229     </div>`)[0];
+                popup_b851a8f98be857de599a90c0cb8344b1.setContent(html_3202d63a431c872f36b3537e52125ab0);
+            
+        
+
+        circle_marker_1655ab76a0d49011af55e789ddc38da7.bindPopup(popup_b851a8f98be857de599a90c0cb8344b1)
+        ;
+
+        
+    
+    
+            var circle_marker_bce80ac4ae15d142157849cb3a18d960 = L.circleMarker(
+                [-21.7825021, -48.1636762],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.162, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_13f45bbc7bf07bdac526d98f0b265703 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1e587c2085d531fcac82d4e4f57d7d15 = $(`<div id="html_1e587c2085d531fcac82d4e4f57d7d15" style="width: 100.0%; height: 100.0%;">     <h4><b>E E  FRANCISCO PEDRO MONTEIRO DA SILVA</b></h4>     <b>Região:</b> Norte<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (1929 votos)<br>     <b>Total de Votos no Local:</b> 4081<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 1540 votos<br>     - DR. LAPENA: 1929 votos<br>     - GARRIDO: 26 votos<br>     - PEDRO LIA TEDDE: 197 votos<br>     - Brancos: 154 | Nulos: 224     </div>`)[0];
+                popup_13f45bbc7bf07bdac526d98f0b265703.setContent(html_1e587c2085d531fcac82d4e4f57d7d15);
+            
+        
+
+        circle_marker_bce80ac4ae15d142157849cb3a18d960.bindPopup(popup_13f45bbc7bf07bdac526d98f0b265703)
+        ;
+
+        
+    
+    
+            var circle_marker_1336a72ce5c83fb44b2d63f0ce3c9787 = L.circleMarker(
+                [-21.7790904, -48.159447],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.732, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_d3d21e32dea0b53c694e2683a4619429 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6731450974281f11693bb56049649056 = $(`<div id="html_6731450974281f11693bb56049649056" style="width: 100.0%; height: 100.0%;">     <h4><b>SESI - SERVIÇO SOCIAL DA INDÚSTRIA</b></h4>     <b>Região:</b> Norte<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (1857 votos)<br>     <b>Total de Votos no Local:</b> 3866<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 1443 votos<br>     - DR. LAPENA: 1857 votos<br>     - GARRIDO: 27 votos<br>     - PEDRO LIA TEDDE: 161 votos<br>     - Brancos: 132 | Nulos: 240     </div>`)[0];
+                popup_d3d21e32dea0b53c694e2683a4619429.setContent(html_6731450974281f11693bb56049649056);
+            
+        
+
+        circle_marker_1336a72ce5c83fb44b2d63f0ce3c9787.bindPopup(popup_d3d21e32dea0b53c694e2683a4619429)
+        ;
+
+        
+    
+    
+            var circle_marker_cbfe0c9688b859b77615d55b9e08c04a = L.circleMarker(
+                [-21.7831523, -48.1779909],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.162, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_3ea27b673ed8eb7854e93101a964a5c1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_853ebbf0fedc9a34973e06a842e69116 = $(`<div id="html_853ebbf0fedc9a34973e06a842e69116" style="width: 100.0%; height: 100.0%;">     <h4><b>ETESG. PROFª ANNA DE OLIVEIRA FERRAZ</b></h4>     <b>Região:</b> Centro<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (1929 votos)<br>     <b>Total de Votos no Local:</b> 4081<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 1540 votos<br>     - DR. LAPENA: 1929 votos<br>     - GARRIDO: 26 votos<br>     - PEDRO LIA TEDDE: 197 votos<br>     - Brancos: 154 | Nulos: 224     </div>`)[0];
+                popup_3ea27b673ed8eb7854e93101a964a5c1.setContent(html_853ebbf0fedc9a34973e06a842e69116);
+            
+        
+
+        circle_marker_cbfe0c9688b859b77615d55b9e08c04a.bindPopup(popup_3ea27b673ed8eb7854e93101a964a5c1)
+        ;
+
+        
+    
+    
+            var circle_marker_71aea8941a42a7d0b665aa221139d50d = L.circleMarker(
+                [-21.7850138, -48.1867486],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.024, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_88939b12358cfe6afd47ecdcb1cb5327 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bbac8a1e87bf9ad42efec2763b230a93 = $(`<div id="html_bbac8a1e87bf9ad42efec2763b230a93" style="width: 100.0%; height: 100.0%;">     <h4><b>COLÉGIO LICEU MONTEIRO LOBATO</b></h4>     <b>Região:</b> Oeste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (229 votos)<br>     <b>Total de Votos no Local:</b> 512<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 201 votos<br>     - DR. LAPENA: 229 votos<br>     - GARRIDO: 7 votos<br>     - PEDRO LIA TEDDE: 29 votos<br>     - Brancos: 19 | Nulos: 27     </div>`)[0];
+                popup_88939b12358cfe6afd47ecdcb1cb5327.setContent(html_bbac8a1e87bf9ad42efec2763b230a93);
+            
+        
+
+        circle_marker_71aea8941a42a7d0b665aa221139d50d.bindPopup(popup_88939b12358cfe6afd47ecdcb1cb5327)
+        ;
+
+        
+    
+    
+            var circle_marker_3299a6a336c21231f8564609e74c1048 = L.circleMarker(
+                [-21.7265035, -48.1488934],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.622, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_d114a7cc019148505f4004431fac4120 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_255d6a090bb723419880d26b8e3cf762 = $(`<div id="html_255d6a090bb723419880d26b8e3cf762" style="width: 100.0%; height: 100.0%;">     <h4><b>EE PROFª MARIA ISABEL RODRIGUES ORSO</b></h4>     <b>Região:</b> Norte<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:red;'><b>ELIANA APARECIDA MORI HONAIN</b></span> (1087 votos)<br>     <b>Total de Votos no Local:</b> 2311<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 1087 votos<br>     - DR. LAPENA: 853 votos<br>     - GARRIDO: 15 votos<br>     - PEDRO LIA TEDDE: 64 votos<br>     - Brancos: 128 | Nulos: 162     </div>`)[0];
+                popup_d114a7cc019148505f4004431fac4120.setContent(html_255d6a090bb723419880d26b8e3cf762);
+            
+        
+
+        circle_marker_3299a6a336c21231f8564609e74c1048.bindPopup(popup_d114a7cc019148505f4004431fac4120)
+        ;
+
+        
+    
+    
+            var circle_marker_2142443fde052b21ecdb9bbf06cfb96f = L.circleMarker(
+                [-21.7782148, -48.1304576],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_acefb8419b11686e4fb3bfe5ec5b435c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0238ea01de5f75759c42a941976cc33f = $(`<div id="html_0238ea01de5f75759c42a941976cc33f" style="width: 100.0%; height: 100.0%;">     <h4><b>EE PROF. OACYR ANTONIO ELLERO</b></h4>     <b>Região:</b> Leste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:red;'><b>ELIANA APARECIDA MORI HONAIN</b></span> (4004 votos)<br>     <b>Total de Votos no Local:</b> 9514<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 4004 votos<br>     - DR. LAPENA: 3826 votos<br>     - GARRIDO: 82 votos<br>     - PEDRO LIA TEDDE: 410 votos<br>     - Brancos: 510 | Nulos: 658     </div>`)[0];
+                popup_acefb8419b11686e4fb3bfe5ec5b435c.setContent(html_0238ea01de5f75759c42a941976cc33f);
+            
+        
+
+        circle_marker_2142443fde052b21ecdb9bbf06cfb96f.bindPopup(popup_acefb8419b11686e4fb3bfe5ec5b435c)
+        ;
+
+        
+    
+    
+            var circle_marker_b93b12678ff66018afcd09bb715a9c4c = L.circleMarker(
+                [-21.81687, -48.202067],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.598, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_201ca31cedfa0fa5974039ad7285b13f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_428ed03e285ecb3163a87f1986cab1da = $(`<div id="html_428ed03e285ecb3163a87f1986cab1da" style="width: 100.0%; height: 100.0%;">     <h4><b>FACULDADE DE CIÊNCIAS E LETRAS DA UNESP</b></h4>     <b>Região:</b> Oeste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:red;'><b>ELIANA APARECIDA MORI HONAIN</b></span> (546 votos)<br>     <b>Total de Votos no Local:</b> 1299<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 546 votos<br>     - DR. LAPENA: 520 votos<br>     - GARRIDO: 15 votos<br>     - PEDRO LIA TEDDE: 68 votos<br>     - Brancos: 52 | Nulos: 95     </div>`)[0];
+                popup_201ca31cedfa0fa5974039ad7285b13f.setContent(html_428ed03e285ecb3163a87f1986cab1da);
+            
+        
+
+        circle_marker_b93b12678ff66018afcd09bb715a9c4c.bindPopup(popup_201ca31cedfa0fa5974039ad7285b13f)
+        ;
+
+        
+    
+    
+            var circle_marker_e84ec070ced0fd583faa2a0f80a3ef27 = L.circleMarker(
+                [-21.7777899, -48.1761405],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.516, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_8c2359b8520ee5ccf49fc33c83cc8f37 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a2258a4a81877ba674d7355a9b2dcfe0 = $(`<div id="html_a2258a4a81877ba674d7355a9b2dcfe0" style="width: 100.0%; height: 100.0%;">     <h4><b>E E  JOAO MANOEL DO AMARAL</b></h4>     <b>Região:</b> Norte<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (641 votos)<br>     <b>Total de Votos no Local:</b> 1258<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 444 votos<br>     - DR. LAPENA: 641 votos<br>     - GARRIDO: 17 votos<br>     - PEDRO LIA TEDDE: 57 votos<br>     - Brancos: 33 | Nulos: 65     </div>`)[0];
+                popup_8c2359b8520ee5ccf49fc33c83cc8f37.setContent(html_a2258a4a81877ba674d7355a9b2dcfe0);
+            
+        
+
+        circle_marker_e84ec070ced0fd583faa2a0f80a3ef27.bindPopup(popup_8c2359b8520ee5ccf49fc33c83cc8f37)
+        ;
+
+        
+    
+    
+            var circle_marker_57f52ee0c0d8bd874e4417f555a2e4b1 = L.circleMarker(
+                [-21.7949332, -48.1867498],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.512, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_7e8363d8fe612483099fc98f5313ac86 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_65d2768ff5624d7d50848b3591baee95 = $(`<div id="html_65d2768ff5624d7d50848b3591baee95" style="width: 100.0%; height: 100.0%;">     <h4><b>SENAC ARARAQUARA</b></h4>     <b>Região:</b> Centro<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (793 votos)<br>     <b>Total de Votos no Local:</b> 1756<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 697 votos<br>     - DR. LAPENA: 793 votos<br>     - GARRIDO: 15 votos<br>     - PEDRO LIA TEDDE: 81 votos<br>     - Brancos: 54 | Nulos: 109     </div>`)[0];
+                popup_7e8363d8fe612483099fc98f5313ac86.setContent(html_65d2768ff5624d7d50848b3591baee95);
+            
+        
+
+        circle_marker_57f52ee0c0d8bd874e4417f555a2e4b1.bindPopup(popup_7e8363d8fe612483099fc98f5313ac86)
+        ;
+
+        
+    
+    
+            var circle_marker_3c8577b2d8f4c2c6d9efbe41c4aa258d = L.circleMarker(
+                [-21.8066955, -48.1568904],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.132, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_60b3866f49e9af2f5a36849f2c959bdc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_36ee20e8c7b0ff8adc0d90de1c40bbe5 = $(`<div id="html_36ee20e8c7b0ff8adc0d90de1c40bbe5" style="width: 100.0%; height: 100.0%;">     <h4><b>EMEF RAFAEL DE MEDINA</b></h4>     <b>Região:</b> Leste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (1181 votos)<br>     <b>Total de Votos no Local:</b> 2566<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 965 votos<br>     - DR. LAPENA: 1181 votos<br>     - GARRIDO: 37 votos<br>     - PEDRO LIA TEDDE: 103 votos<br>     - Brancos: 105 | Nulos: 169     </div>`)[0];
+                popup_60b3866f49e9af2f5a36849f2c959bdc.setContent(html_36ee20e8c7b0ff8adc0d90de1c40bbe5);
+            
+        
+
+        circle_marker_3c8577b2d8f4c2c6d9efbe41c4aa258d.bindPopup(popup_60b3866f49e9af2f5a36849f2c959bdc)
+        ;
+
+        
+    
+    
+            var circle_marker_5fb078c338020a471142632f5318f13f = L.circleMarker(
+                [-21.8051373, -48.1673509],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.308, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_5fc8197dd48097a181afc08d46025b79 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a2efd8a947aea5767483e99faf1ed88b = $(`<div id="html_a2efd8a947aea5767483e99faf1ed88b" style="width: 100.0%; height: 100.0%;">     <h4><b>EE DR. JOAO PIRES DE CAMARGO</b></h4>     <b>Região:</b> Centro<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (1650 votos)<br>     <b>Total de Votos no Local:</b> 3654<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 1435 votos<br>     - DR. LAPENA: 1650 votos<br>     - GARRIDO: 43 votos<br>     - PEDRO LIA TEDDE: 170 votos<br>     - Brancos: 136 | Nulos: 211     </div>`)[0];
+                popup_5fc8197dd48097a181afc08d46025b79.setContent(html_a2efd8a947aea5767483e99faf1ed88b);
+            
+        
+
+        circle_marker_5fb078c338020a471142632f5318f13f.bindPopup(popup_5fc8197dd48097a181afc08d46025b79)
+        ;
+
+        
+    
+    
+            var circle_marker_41460c0e59b216e4659e0b699e74d8a8 = L.circleMarker(
+                [-21.7927601, -48.16643],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.43, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_32ce6eefa1cca3c27b756180ca54e45f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dbe3c114020c290d2f96b595981ffaf6 = $(`<div id="html_dbe3c114020c290d2f96b595981ffaf6" style="width: 100.0%; height: 100.0%;">     <h4><b>E.E.  ANTONIO LOURENCO CORREA</b></h4>     <b>Região:</b> Centro<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (1055 votos)<br>     <b>Total de Votos no Local:</b> 2215<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 868 votos<br>     - DR. LAPENA: 1055 votos<br>     - GARRIDO: 18 votos<br>     - PEDRO LIA TEDDE: 93 votos<br>     - Brancos: 57 | Nulos: 122     </div>`)[0];
+                popup_32ce6eefa1cca3c27b756180ca54e45f.setContent(html_dbe3c114020c290d2f96b595981ffaf6);
+            
+        
+
+        circle_marker_41460c0e59b216e4659e0b699e74d8a8.bindPopup(popup_32ce6eefa1cca3c27b756180ca54e45f)
+        ;
+
+        
+    
+    
+            var circle_marker_5f50e94989806083c853bf0f9a73a497 = L.circleMarker(
+                [-21.8006452, -48.1482668],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.028, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_ced54285b5f3a0fd0635b7f48584811a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0f47682a8092ca95458422ca1a83cc17 = $(`<div id="html_0f47682a8092ca95458422ca1a83cc17" style="width: 100.0%; height: 100.0%;">     <h4><b>EE DEPUTADO LEONARDO BARBIERI</b></h4>     <b>Região:</b> Leste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (2379 votos)<br>     <b>Total de Votos no Local:</b> 5514<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 2210 votos<br>     - DR. LAPENA: 2379 votos<br>     - GARRIDO: 79 votos<br>     - PEDRO LIA TEDDE: 221 votos<br>     - Brancos: 224 | Nulos: 396     </div>`)[0];
+                popup_ced54285b5f3a0fd0635b7f48584811a.setContent(html_0f47682a8092ca95458422ca1a83cc17);
+            
+        
+
+        circle_marker_5f50e94989806083c853bf0f9a73a497.bindPopup(popup_ced54285b5f3a0fd0635b7f48584811a)
+        ;
+
+        
+    
+    
+            var circle_marker_c318ef8d130b17843533c03c53f2a6b4 = L.circleMarker(
+                [-21.7794943, -48.1431392],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.05, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_41c3f187315ac6f6f435e3d01f1b349c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3eb1a722a62647a3f1d8909ed86d3521 = $(`<div id="html_3eb1a722a62647a3f1d8909ed86d3521" style="width: 100.0%; height: 100.0%;">     <h4><b>CER ROSA RIBEIRO STRINGHETTI</b></h4>     <b>Região:</b> Leste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (454 votos)<br>     <b>Total de Votos no Local:</b> 1025<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 388 votos<br>     - DR. LAPENA: 454 votos<br>     - GARRIDO: 10 votos<br>     - PEDRO LIA TEDDE: 36 votos<br>     - Brancos: 45 | Nulos: 89     </div>`)[0];
+                popup_41c3f187315ac6f6f435e3d01f1b349c.setContent(html_3eb1a722a62647a3f1d8909ed86d3521);
+            
+        
+
+        circle_marker_c318ef8d130b17843533c03c53f2a6b4.bindPopup(popup_41c3f187315ac6f6f435e3d01f1b349c)
+        ;
+
+        
+    
+    
+            var circle_marker_220e444f648d5d5d1b130fe3cba639cf = L.circleMarker(
+                [-21.8037432, -48.1314293],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.597999999999999, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_9a4252ef3cfe149ed949c09388370c2d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_96136dd590418783493e399e5bad3bfe = $(`<div id="html_96136dd590418783493e399e5bad3bfe" style="width: 100.0%; height: 100.0%;">     <h4><b>EMEF PROF. HENRIQUE SCABELLO</b></h4>     <b>Região:</b> Leste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:red;'><b>ELIANA APARECIDA MORI HONAIN</b></span> (1026 votos)<br>     <b>Total de Votos no Local:</b> 1799<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 1026 votos<br>     - DR. LAPENA: 483 votos<br>     - GARRIDO: 13 votos<br>     - PEDRO LIA TEDDE: 32 votos<br>     - Brancos: 114 | Nulos: 131     </div>`)[0];
+                popup_9a4252ef3cfe149ed949c09388370c2d.setContent(html_96136dd590418783493e399e5bad3bfe);
+            
+        
+
+        circle_marker_220e444f648d5d5d1b130fe3cba639cf.bindPopup(popup_9a4252ef3cfe149ed949c09388370c2d)
+        ;
+
+        
+    
+    
+            var circle_marker_d321d8258dd989fac95ac33a4cca63c1 = L.circleMarker(
+                [-21.7830258, -48.1637128],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.19, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_636a0e76ab94e401eab76060eb58ef4d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5d88c4acde8f3594f4cd1c74c4c19908 = $(`<div id="html_5d88c4acde8f3594f4cd1c74c4c19908" style="width: 100.0%; height: 100.0%;">     <h4><b>UDEFA - UNIÃO DOS DEFICIENTES FÍSICOS DE ARARAQUARA</b></h4>     <b>Região:</b> Norte<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (1808 votos)<br>     <b>Total de Votos no Local:</b> 4095<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 1574 votos<br>     - DR. LAPENA: 1808 votos<br>     - GARRIDO: 35 votos<br>     - PEDRO LIA TEDDE: 195 votos<br>     - Brancos: 184 | Nulos: 293     </div>`)[0];
+                popup_636a0e76ab94e401eab76060eb58ef4d.setContent(html_5d88c4acde8f3594f4cd1c74c4c19908);
+            
+        
+
+        circle_marker_d321d8258dd989fac95ac33a4cca63c1.bindPopup(popup_636a0e76ab94e401eab76060eb58ef4d)
+        ;
+
+        
+    
+    
+            var circle_marker_629cb5e6d2e352ddc896ce0cef8e7eae = L.circleMarker(
+                [-21.7692854, -48.1748849],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.216000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_d3239996112837e2761688b1cf192d77 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e69a3f08c733b67112f9f2ca671a4c40 = $(`<div id="html_e69a3f08c733b67112f9f2ca671a4c40" style="width: 100.0%; height: 100.0%;">     <h4><b>COLÉGIO MASTER ANGLO DE ARARAQUARA</b></h4>     <b>Região:</b> Norte<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (1378 votos)<br>     <b>Total de Votos no Local:</b> 2608<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 900 votos<br>     - DR. LAPENA: 1378 votos<br>     - GARRIDO: 15 votos<br>     - PEDRO LIA TEDDE: 139 votos<br>     - Brancos: 55 | Nulos: 117     </div>`)[0];
+                popup_d3239996112837e2761688b1cf192d77.setContent(html_e69a3f08c733b67112f9f2ca671a4c40);
+            
+        
+
+        circle_marker_629cb5e6d2e352ddc896ce0cef8e7eae.bindPopup(popup_d3239996112837e2761688b1cf192d77)
+        ;
+
+        
+    
+    
+            var circle_marker_a91bc36f4527ef294988be46cf6c49da = L.circleMarker(
+                [-21.8089876, -48.1627889],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.530000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_963613d15166b6e9d85035ef508e99ff = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fd4b6e9475811d934291894c8cd4f72e = $(`<div id="html_fd4b6e9475811d934291894c8cd4f72e" style="width: 100.0%; height: 100.0%;">     <h4><b>CEC FUNDECITRUS</b></h4>     <b>Região:</b> Sul<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (1605 votos)<br>     <b>Total de Votos no Local:</b> 3265<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 1212 votos<br>     - DR. LAPENA: 1605 votos<br>     - GARRIDO: 33 votos<br>     - PEDRO LIA TEDDE: 155 votos<br>     - Brancos: 92 | Nulos: 164     </div>`)[0];
+                popup_963613d15166b6e9d85035ef508e99ff.setContent(html_fd4b6e9475811d934291894c8cd4f72e);
+            
+        
+
+        circle_marker_a91bc36f4527ef294988be46cf6c49da.bindPopup(popup_963613d15166b6e9d85035ef508e99ff)
+        ;
+
+        
+    
+    
+            var circle_marker_0c394aa99d8e1199b42aaf5ca44742be = L.circleMarker(
+                [-21.7698159, -48.1856123],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.07, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_cb4d8a956fe8c15b79b4f53dbf54c444 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f69ae4e17504ab3da21ba12c680db460 = $(`<div id="html_f69ae4e17504ab3da21ba12c680db460" style="width: 100.0%; height: 100.0%;">     <h4><b>SABSA - SOC. AMIGOS DO BAIRRO SANTA ANGELINA</b></h4>     <b>Região:</b> Norte<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (522 votos)<br>     <b>Total de Votos no Local:</b> 1035<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 356 votos<br>     - DR. LAPENA: 522 votos<br>     - GARRIDO: 10 votos<br>     - PEDRO LIA TEDDE: 51 votos<br>     - Brancos: 32 | Nulos: 60     </div>`)[0];
+                popup_cb4d8a956fe8c15b79b4f53dbf54c444.setContent(html_f69ae4e17504ab3da21ba12c680db460);
+            
+        
+
+        circle_marker_0c394aa99d8e1199b42aaf5ca44742be.bindPopup(popup_cb4d8a956fe8c15b79b4f53dbf54c444)
+        ;
+
+        
+    
+    
+            var circle_marker_156d690588479d85b32845c19f466508 = L.circleMarker(
+                [-21.8191655, -48.1427129],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.732, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_fa82748d7dc20a32684fdb2777b1614a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_910a90dd2be7f5e338a019969b2652e5 = $(`<div id="html_910a90dd2be7f5e338a019969b2652e5" style="width: 100.0%; height: 100.0%;">     <h4><b>EE PROF JOAQUIM PINTO MACHADO JÚNIOR - PROFESSOR MACHADINHO</b></h4>     <b>Região:</b> Leste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:red;'><b>ELIANA APARECIDA MORI HONAIN</b></span> (901 votos)<br>     <b>Total de Votos no Local:</b> 1866<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 901 votos<br>     - DR. LAPENA: 632 votos<br>     - GARRIDO: 15 votos<br>     - PEDRO LIA TEDDE: 75 votos<br>     - Brancos: 100 | Nulos: 140     </div>`)[0];
+                popup_fa82748d7dc20a32684fdb2777b1614a.setContent(html_910a90dd2be7f5e338a019969b2652e5);
+            
+        
+
+        circle_marker_156d690588479d85b32845c19f466508.bindPopup(popup_fa82748d7dc20a32684fdb2777b1614a)
+        ;
+
+        
+    
+    
+            var circle_marker_c76105f171286c397b8621ac2e8a5df1 = L.circleMarker(
+                [-21.8012368, -48.180839],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.028, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_20f8682f86449a738fca22809630da95 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_def0479d9a08270393c30ed03fa05950 = $(`<div id="html_def0479d9a08270393c30ed03fa05950" style="width: 100.0%; height: 100.0%;">     <h4><b>EE. FLORESTANO LIBUTTI</b></h4>     <b>Região:</b> Centro<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (2379 votos)<br>     <b>Total de Votos no Local:</b> 5514<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 2210 votos<br>     - DR. LAPENA: 2379 votos<br>     - GARRIDO: 79 votos<br>     - PEDRO LIA TEDDE: 221 votos<br>     - Brancos: 224 | Nulos: 396     </div>`)[0];
+                popup_20f8682f86449a738fca22809630da95.setContent(html_def0479d9a08270393c30ed03fa05950);
+            
+        
+
+        circle_marker_c76105f171286c397b8621ac2e8a5df1.bindPopup(popup_20f8682f86449a738fca22809630da95)
+        ;
+
+        
+    
+    
+            var circle_marker_e281d8c4a812c63358b6030de1b75aee = L.circleMarker(
+                [-21.7937798, -48.1819534],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.79, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_6fa8a5e07f3a74d21fedcde6f9578326 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c71737caaaa20254315c48ca14c944f = $(`<div id="html_0c71737caaaa20254315c48ca14c944f" style="width: 100.0%; height: 100.0%;">     <h4><b>FACULDADE DE CIENCIAS FARMACÊUTICAS E ODONTOLÓGICAS</b></h4>     <b>Região:</b> Centro<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (1630 votos)<br>     <b>Total de Votos no Local:</b> 3395<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 1284 votos<br>     - DR. LAPENA: 1630 votos<br>     - GARRIDO: 20 votos<br>     - PEDRO LIA TEDDE: 139 votos<br>     - Brancos: 134 | Nulos: 183     </div>`)[0];
+                popup_6fa8a5e07f3a74d21fedcde6f9578326.setContent(html_0c71737caaaa20254315c48ca14c944f);
+            
+        
+
+        circle_marker_e281d8c4a812c63358b6030de1b75aee.bindPopup(popup_6fa8a5e07f3a74d21fedcde6f9578326)
+        ;
+
+        
+    
+    
+            var circle_marker_d804713e563385a4bc62b22c214adbd9 = L.circleMarker(
+                [-21.7874197, -48.1822388],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.888, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_a0982a56bcafc73230ac2d045d01c2b3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2a2f5a622d67f8b766db3d43c6221bea = $(`<div id="html_2a2f5a622d67f8b766db3d43c6221bea" style="width: 100.0%; height: 100.0%;">     <h4><b>EE. NARCISO DA SILVA CESAR</b></h4>     <b>Região:</b> Centro<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (2058 votos)<br>     <b>Total de Votos no Local:</b> 4444<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 1767 votos<br>     - DR. LAPENA: 2058 votos<br>     - GARRIDO: 41 votos<br>     - PEDRO LIA TEDDE: 150 votos<br>     - Brancos: 170 | Nulos: 251     </div>`)[0];
+                popup_a0982a56bcafc73230ac2d045d01c2b3.setContent(html_2a2f5a622d67f8b766db3d43c6221bea);
+            
+        
+
+        circle_marker_d804713e563385a4bc62b22c214adbd9.bindPopup(popup_a0982a56bcafc73230ac2d045d01c2b3)
+        ;
+
+        
+    
+    
+            var circle_marker_38b8961f8ddb82f9fccbcf9c628480c5 = L.circleMarker(
+                [-21.7525161, -48.1730544],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.6259999999999994, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_6f8fae0b43c5850ab44da0fd0ea0342c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_95611ab0a02b05208c09bfb622e733b7 = $(`<div id="html_95611ab0a02b05208c09bfb622e733b7" style="width: 100.0%; height: 100.0%;">     <h4><b>CER HONORINA COMELLI LIA</b></h4>     <b>Região:</b> Norte<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (389 votos)<br>     <b>Total de Votos no Local:</b> 813<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 309 votos<br>     - DR. LAPENA: 389 votos<br>     - GARRIDO: 6 votos<br>     - PEDRO LIA TEDDE: 42 votos<br>     - Brancos: 25 | Nulos: 42     </div>`)[0];
+                popup_6f8fae0b43c5850ab44da0fd0ea0342c.setContent(html_95611ab0a02b05208c09bfb622e733b7);
+            
+        
+
+        circle_marker_38b8961f8ddb82f9fccbcf9c628480c5.bindPopup(popup_6f8fae0b43c5850ab44da0fd0ea0342c)
+        ;
+
+        
+    
+    
+            var circle_marker_bcaf9ef18d038467fffc6003c9df4ee0 = L.circleMarker(
+                [-21.7861986, -48.1640138],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.936, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_70f456fe49dd0a229b9b8c5c615c2605 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_881c57d8229b7859806b0b458faf5cfd = $(`<div id="html_881c57d8229b7859806b0b458faf5cfd" style="width: 100.0%; height: 100.0%;">     <h4><b>CER ELOÁ DO VALLE QUADROS</b></h4>     <b>Região:</b> Leste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (1584 votos)<br>     <b>Total de Votos no Local:</b> 3468<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 1338 votos<br>     - DR. LAPENA: 1584 votos<br>     - GARRIDO: 28 votos<br>     - PEDRO LIA TEDDE: 142 votos<br>     - Brancos: 173 | Nulos: 200     </div>`)[0];
+                popup_70f456fe49dd0a229b9b8c5c615c2605.setContent(html_881c57d8229b7859806b0b458faf5cfd);
+            
+        
+
+        circle_marker_bcaf9ef18d038467fffc6003c9df4ee0.bindPopup(popup_70f456fe49dd0a229b9b8c5c615c2605)
+        ;
+
+        
+    
+    
+            var circle_marker_6375a43f0b3decd810994e1e2773a929 = L.circleMarker(
+                [-21.7960483, -48.1952032],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.004, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_e8524cf61ad8457eecd236f001cb2f19 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_58d29931b81a0df208bda0fa0158fff0 = $(`<div id="html_58d29931b81a0df208bda0fa0158fff0" style="width: 100.0%; height: 100.0%;">     <h4><b>ESCOLA ESTADUAL PROFESSOR URIAS BRAGA COSTA</b></h4>     <b>Região:</b> Oeste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (245 votos)<br>     <b>Total de Votos no Local:</b> 502<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 191 votos<br>     - DR. LAPENA: 245 votos<br>     - GARRIDO: 11 votos<br>     - PEDRO LIA TEDDE: 16 votos<br>     - Brancos: 12 | Nulos: 27     </div>`)[0];
+                popup_e8524cf61ad8457eecd236f001cb2f19.setContent(html_58d29931b81a0df208bda0fa0158fff0);
+            
+        
+
+        circle_marker_6375a43f0b3decd810994e1e2773a929.bindPopup(popup_e8524cf61ad8457eecd236f001cb2f19)
+        ;
+
+        
+    
+    
+            var circle_marker_fb17089c7c7c566642266627c890e6ce = L.circleMarker(
+                [-21.8323564, -48.1409355],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_cd359cd9b03f404d58d9ee6344e42906 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3efc0da2a31fd0fdf9d6de91f9ee3931 = $(`<div id="html_3efc0da2a31fd0fdf9d6de91f9ee3931" style="width: 100.0%; height: 100.0%;">     <h4><b>CER MARIA JOSE PAHIN DA PORCIUNCULA</b></h4>     <b>Região:</b> Sul<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:red;'><b>ELIANA APARECIDA MORI HONAIN</b></span> (113 votos)<br>     <b>Total de Votos no Local:</b> 250<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 113 votos<br>     - DR. LAPENA: 92 votos<br>     - GARRIDO: 4 votos<br>     - PEDRO LIA TEDDE: 9 votos<br>     - Brancos: 21 | Nulos: 11     </div>`)[0];
+                popup_cd359cd9b03f404d58d9ee6344e42906.setContent(html_3efc0da2a31fd0fdf9d6de91f9ee3931);
+            
+        
+
+        circle_marker_fb17089c7c7c566642266627c890e6ce.bindPopup(popup_cd359cd9b03f404d58d9ee6344e42906)
+        ;
+
+        
+    
+    
+            var circle_marker_734575ffb39a346d3dbf0f79c95010e7 = L.circleMarker(
+                [-21.8006452, -48.1482668],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.55, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_4bf48e194859d756985f6d05a4ec3c42 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e4e88f0538bbb04f29272fab2bf0a0e5 = $(`<div id="html_e4e88f0538bbb04f29272fab2bf0a0e5" style="width: 100.0%; height: 100.0%;">     <h4><b>CER JOSÉ PIZANI</b></h4>     <b>Região:</b> Leste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:red;'><b>ELIANA APARECIDA MORI HONAIN</b></span> (342 votos)<br>     <b>Total de Votos no Local:</b> 775<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 342 votos<br>     - DR. LAPENA: 302 votos<br>     - GARRIDO: 10 votos<br>     - PEDRO LIA TEDDE: 34 votos<br>     - Brancos: 29 | Nulos: 58     </div>`)[0];
+                popup_4bf48e194859d756985f6d05a4ec3c42.setContent(html_e4e88f0538bbb04f29272fab2bf0a0e5);
+            
+        
+
+        circle_marker_734575ffb39a346d3dbf0f79c95010e7.bindPopup(popup_4bf48e194859d756985f6d05a4ec3c42)
+        ;
+
+        
+    
+    
+            var circle_marker_d77647f84679d382f1d3a60b6a673aeb = L.circleMarker(
+                [-21.7828443, -48.1262752],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_0826d13785d285fa466cddc94052fdfa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_031c3ab6f84380d91bd352db2ac6673f = $(`<div id="html_031c3ab6f84380d91bd352db2ac6673f" style="width: 100.0%; height: 100.0%;">     <h4><b>EMEF PROFESSOR HERMÍNIO PAGOTTO</b></h4>     <b>Região:</b> Leste<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (167 votos)<br>     <b>Total de Votos no Local:</b> 361<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 134 votos<br>     - DR. LAPENA: 167 votos<br>     - GARRIDO: 5 votos<br>     - PEDRO LIA TEDDE: 15 votos<br>     - Brancos: 17 | Nulos: 23     </div>`)[0];
+                popup_0826d13785d285fa466cddc94052fdfa.setContent(html_031c3ab6f84380d91bd352db2ac6673f);
+            
+        
+
+        circle_marker_d77647f84679d382f1d3a60b6a673aeb.bindPopup(popup_0826d13785d285fa466cddc94052fdfa)
+        ;
+
+        
+    
+    
+            var circle_marker_f492c03d2a7ba55d8baafa2f0d8ec4cf = L.circleMarker(
+                [-21.7228814, -48.1588422],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 3}
+            ).addTo(map_2b05d2a77c17fe30620bd339faa70f94);
+        
+    
+        var popup_84d009f141259e010b158a24f45db3a5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ba1c4ba501f58a72bc4bedb8c827051e = $(`<div id="html_ba1c4ba501f58a72bc4bedb8c827051e" style="width: 100.0%; height: 100.0%;">     <h4><b>EMEF VEREADOR EDMILSON DE NOLA SÁ</b></h4>     <b>Região:</b> Norte<br>     <hr style='margin: 8px 0;'>     <b>Vencedor aqui:</b> <span style='color:blue;'><b>LUIS CLAUDIO LAPENA BARRETO</b></span> (2864 votos)<br>     <b>Total de Votos no Local:</b> 6913<br>     <br>     <b>Detalhamento:</b><br>     - ELIANA HONAIN: 2819 votos<br>     - DR. LAPENA: 2864 votos<br>     - GARRIDO: 68 votos<br>     - PEDRO LIA TEDDE: 219 votos<br>     - Brancos: 375 | Nulos: 559     </div>`)[0];
+                popup_84d009f141259e010b158a24f45db3a5.setContent(html_ba1c4ba501f58a72bc4bedb8c827051e);
+            
+        
+
+        circle_marker_f492c03d2a7ba55d8baafa2f0d8ec4cf.bindPopup(popup_84d009f141259e010b158a24f45db3a5)
+        ;
+
+        
+    
+</script>
+</html>
